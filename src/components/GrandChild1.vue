@@ -10,8 +10,6 @@
 </template>
 <script>
 export default {
-    name:'GrandChild1',
-
     data(){
         return {
             msg:""
@@ -21,13 +19,13 @@ export default {
     mounted(){
 
         this.$on("dispatch",msg=>{
-            this.msg = '接收汤圆爸爸消息:'+ msg
+            this.msg = '接收dispatch消息:'+ msg
         })
         this.$on("boardcast",msg=>{
             this.msg = '接收汤圆爸爸消息:'+ msg
         })
         this.$bus.$on("event-bus",msg=>{
-            this.msg = '接收公共汽车消息:'+ msg
+            this.msg = '接收小胖消息:'+ msg
         })
     }
 }

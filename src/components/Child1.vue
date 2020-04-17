@@ -15,7 +15,6 @@ import GrandChild2 from "@/components/GrandChild2";
 
 
 export default {
-  name: "Child1",
   props: ["title"],
   data() {
     return {
@@ -36,7 +35,7 @@ export default {
       this.msg = "接收dispatch消息:" + msg;
     });
     this.$bus.$on("event-bus",msg=>{
-        this.msg = '接收公共汽车消息:'+ msg
+        this.msg = '接收小胖消息:'+ msg
     })
   }
 };

@@ -8,8 +8,6 @@
 </template>
 <script>
 export default {
-  name:'GrandGrandChild1',
-
   inject: ["woniu"],
   data() {
     return {
@@ -21,7 +19,7 @@ export default {
             this.msg = '接收boardcast消息:'+ msg
         })
         this.$bus.$on("event-bus",msg=>{
-            this.msg = '接收event-bus消息:'+ msg
+            this.msg = '接收小胖消息:'+ msg
         })
   },
 };

@@ -38,7 +38,7 @@ export default {
         this.msg = '接收dispatch消息:'+ msg
     })
     this.$bus.$on("event-bus",msg=>{
-        this.msg = '接收event-bus消息:'+ msg
+        this.msg = '接收小胖消息:'+ msg
     })
   }
 
@@ -59,6 +59,8 @@ h1,h2{
   margin:5px 0;
   
 }
+</style>
+<style>
 h3{
   color:#3fb374;
   font-size:14px;

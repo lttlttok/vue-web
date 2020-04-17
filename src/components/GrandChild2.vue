@@ -5,7 +5,7 @@
         <p style="color:#3ca0e6;">
             小李子爷爷对小胖说 : {{woniu}}
         </p>
-        <cube-button :primary="true" :inline="true" @click="eventBus">$bus发布</cube-button>
+        <cube-button :primary="true" :inline="true" @click="eventBus">eventBus</cube-button>
         <h3>{{msg}}</h3>
         <grand-grand-child1>
         </grand-grand-child1>
@@ -15,8 +15,6 @@
 import GrandGrandChild1 from '@/components/GrandGrandChild1'
 
 export default {
-    name:'GrandChild2',
-
     components:{GrandGrandChild1},
     inject:['woniu'],
     data(){
@@ -26,7 +24,7 @@ export default {
     },
     methods:{
         eventBus(){
-            this.$bus.$emit('event-bus','测试公共汽车')
+            this.$bus.$emit('event-bus','大家好，我是小胖')
         }
     },
     mounted(){
